@@ -1,0 +1,7 @@
+<h3>Active Vendors</h3>
+
+<div class="row">
+    <div *ngFor="let v of vendors" class="vendor-card">
+        <a href="edit/vendors/{{v.id}}" class="btn btn-primary btn-lg" role="button">{{v.name}}</a>
+    </div>
+</div>

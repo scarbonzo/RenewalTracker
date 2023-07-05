@@ -1,0 +1,7 @@
+<h3>Active Categories</h3>
+
+<div class="row">
+    <div *ngFor="let c of categories" class="category-card">
+        <a href="edit/categories/{{c.id}}" class="btn btn-primary btn-lg" role="button">{{c.name}}</a>
+    </div>
+</div>

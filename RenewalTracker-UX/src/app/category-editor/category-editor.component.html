@@ -1,0 +1,41 @@
+<h4>Editing <b>{{model.name}}</b></h4>
+
+<form #userForm="ngForm">
+    <div class="form-group">
+        <div class="col-6">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="left">ID</td>
+                        <td ><input type="text" class="form-control" id="id"
+                            required
+                            [(ngModel)]="model.id" name="id" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="left">Name</td>
+                        <td>
+                            <input type="text" class="form-control" id="name"
+                            required
+                            [(ngModel)]="model.name" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">Notes</td>
+                        <td>
+                            <input type="text" class="form-control" id="notes"
+                            required
+                            [(ngModel)]="model.notes" name="notes">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">Active</td>
+                        <td>
+                            <input [(ngModel)]="model.active" type="checkbox"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>   
+    <button type="button" class="col-2 btn btn-primary" (click)="UpdateCategory()">Update Category</button>
+</form>
